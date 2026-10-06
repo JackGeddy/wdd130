@@ -1,0 +1,24 @@
+
+
+:root{
+    --first_color: blue;
+    --second_color: green;
+    --third_color: red;
+
+
+}
+
+body{
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+    border: color(srgb red green blue);
+    background-color: rgb(10, 124, 96);
+
+
+}
+
+#content{
+    text-align: right;
+}
