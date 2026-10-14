@@ -1,0 +1,47 @@
+
+
+body{
+    background-color: #ffecd7;
+    text-align: center;
+    margin: 50px 40%;
+    font-family: helvetica;
+    color: #fffffe;
+}
+
+.card{
+    background-color: #008db1;
+    border: 5px solid #004e63;
+    border-radius: 30px;
+}
+
+.head{
+    margin: 15px auto 5px auto;
+}
+
+img{
+    width: 080%;
+    border: 5px solid white;
+    margin: 5px;
+
+}
+
+ul{
+    text-align: left;
+    margin: 0 auto;
+    width: 160px;
+    padding: 5px 5px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #91e4fb;
+    padding: 5px 5px;
+}
+
+.quote{
+    font-family: "brush script mt", "nanum brush script";
+    color: #ffd783;
+    padding: 10px 10px;
+    font-size: 20px;
+}
