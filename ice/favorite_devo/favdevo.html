@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <table>
+          <tr class="titles">
+            <th><div class="speaker">Speaker</div></th>
+            <th><div class="title">Title</div></th>
+            <th><div class="location">Location</div></th>
+            <th><div class="year">Year</div></th>
+          </tr>
+          <tr class="r1">
+            <td>Elder Gary E. Stevenson</td>
+            <td>Blessed Are the Peacemakers</td>
+            <td>General Conference</td>
+            <td>2025</td>
+          </tr>
+          <tr class="r2">
+            <td>President Dallin H. Oaks</td>
+            <td>The Gospel of Jesus Christ Is for All</td>
+            <td>General Conference</td>
+            <td>2026</td>
+          </tr>
+          <tr class="r3">
+            <td>President Russell M. Nelson</td>
+            <td>Focus on the Temple</td>
+            <td>General Conference</td>
+            <td>2022</td>
+          </tr>
+        <!-- Add your devotional content here --> 
+         </table>
+         <form>
+          <br><br><br><b>Search or Add Another</b><br><br>
+          <table>
+            <tr class="inputs">
+              <td class="inputs"><label for="speaker">Speaker</label><br>
+              <input type="text" id="speaker" name="speaker" placeholder="Speaker"><br></td>
+              <td class="inputs"><label for="title">Title</label><br>
+              <input type="text" id="title" name="title" placeholder="Title"><br></td>
+              <td class="inputs"><label for="location">Location</label><br>
+              <input type="text" id="location" name="location" placeholder="Location"><br></td>
+              <td class="inputs"><label for="year">Year</label><br>
+              <input type="text" id="year" name="year" placeholder="Year"><br></td>
+            </tr>
+          </table>
+          <br><input class="submits" type="submit" value="Submit">
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
