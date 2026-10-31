@@ -21,55 +21,85 @@
 
   <div id="hero">
     <div id="hero-images">
-      <div class="images">
-        <img  src="images/breath.jpg" alt="Breath Of The Wild"></div>
-      <div class="images">
-        <img  src="images/tears_of_the_kingdom.jpg" alt="Tears Of The Kingdom"></div>
-      <div class="images">
-        <img  src="images/oot.png" alt="Ocarina Of Time"></div>
+      <div class="images1">
+        <img class="images" src="images/breath.jpg" alt="Breath Of The Wild"></div>
+      <div class="images1">
+        <img class="images" src="images/tears_of_the_kingdom.jpg" alt="Tears Of The Kingdom"></div>
+      <div class="images1">
+        <img class="images" src="images/oot.png" alt="Ocarina Of Time"></div>
     </div>
-    <h1 class="hero-title"> Welcome and whatnot...</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id, scelerisque purus. Ut auctor gravida nulla.</p>
+    <h1 class="hero-text"> Welcome and whatnot...</h1>
+    <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id, scelerisque purus. Ut auctor gravida nulla.</p>
   </div>
 
   <main>
-    <h1>About Me</h1>
-    <h2>Me looking absoulutly handsome!</h2>
-    <img src="images/me.JPG" alt="Mission Group Photo">
-    <section class="something1">
-      <img src="images/placehold.png" alt="Placeholder">
-      <h3>Something about me</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id, scelerisque purus. Ut auctor gravida nulla.</p>
-    </section>
-    <section class="something2">
-      <img src="images/placehold.png" alt="Placeholder">
-      <h3>Something about me</h3>
-      <p>Aliquam vel nibh iaculis, ornare purus sit amet, euismod dui. Cras sed tristique neque. Cras ornare dui lorem, vel rhoncus elit venenatis sit amet.</p>
-    </section>
-    <section class="something3">
-      <img src="images/placehold.png" alt="Placeholder">
-      <h3>Something about me</h3>
-      <p>Vestibulum ultricies erat vitae faucibus vulputate. Sed finibus ipsum eu nibh volutpat, in congue sapien vehicula condimentum ligula vitae.</p>
+    <section id="aboutme">
+      <section class="handsome">
+        <h1 class="me">About Me</h1>
+        <h2 class="me">Me looking absoulutly handsome!</h2>
+        <p class="me">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id, scelerisque purus. Ut auctor gravida nulla.</p>
+      </section>
+      <img class="me" src="images/me.JPG" alt="Mission Group Photo">
+      <section class="something">
+        <img src="images/placehold.png" alt="Placeholder">
+        <h3 class="me">Something about me</h3>
+        <p class="me">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id, scelerisque purus. Ut auctor gravida nulla.</p>
+      </section>
+      <section class="something">
+        <img src="images/placehold.png" alt="Placeholder">
+        <h3 class="me">Something about me</h3>
+        <p class="me">Aliquam vel nibh iaculis, ornare purus sit amet, euismod dui. Cras sed tristique neque. Cras ornare dui lorem, vel rhoncus elit venenatis sit amet.</p>
+      </section>
+      <section class="something">
+        <img src="images/placehold.png" alt="Placeholder">
+        <h3 class="me">Something about me</h3>
+        <p class="me">Vestibulum ultricies erat vitae faucibus vulputate. Sed finibus ipsum eu nibh volutpat, in congue sapien vehicula condimentum ligula vitae.</p>
+      </section>
     </section>
 
-    <section>
-      <h2>Random Facts</h2>
-      <p class="scroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id, scelerisque purus. Ut auctor gravida nulla.</p>
-      <p class="scroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id, scelerisque purus. Ut auctor gravida nulla.</p>
-      <p class="scroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id, scelerisque purus. Ut auctor gravida nulla.</p>
-      <input type="button" onclick="alert('this will move the text to the next text')" value="Next">
-      <input type="button" onclick="alert('this will move the text to the previous text')" value="Back">
-      <img src="images/logo_img.png" alt="logo">
+    <section id="facts">
+      <h2 class="facts">Random Facts</h2>
+      <section class="facts">
+        <p class="scroll">1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id, scelerisque purus. Ut auctor gravida nulla.</p>
+        <p class="scroll">2Aliquam vel nibh iaculis, ornare purus sit amet, euismod dui. Cras sed tristique neque. Cras ornare dui lorem, vel rhoncus elit venenatis sit amet.</p>
+        <p class="scroll">3Vestibulum ultricies erat vitae faucibus vulputate. Sed finibus ipsum eu nibh volutpat, in congue sapien vehicula condimentum ligula vitae.</p>
+        <button class="left" onclick="plusDivs(-1)" value="Back">&#10094</button>
+        <button class="right" onclick="plusDivs(1)" value="Next">&#10095</button>
+      </section>
+      <img class="facts" src="images/logo_img.png" alt="logo">
     </section>
   </main>
   <footer>
-    <nav>
+    <nav class="nava2">
       <a href="index.html">Home</a>
       <a href="wwr/index.html" target="_blank">WWR</a>
       <a href="ice/halloween/index.html" target="_blank">ICE</a>
       <a href="Aboutme" target="_blank">About Me</a>
     </nav>
-    <p>bottom text here</p>
+    <p class="text">bottom text here</p>
   </footer>
+
+<script>
+let slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  const slides = document.querySelectorAll(".scroll");
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+
+  slides.forEach(slide => {
+    slide.style.display = "none";
+  });
+
+  slides[slideIndex - 1].style.display = "block";
+}
+</script>
+
 </body>
 </html>
