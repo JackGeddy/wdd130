@@ -226,3 +226,44 @@ footer{
     color:#D0D0D0;
     border-top: 2px solid #D0D0D0;
 }
+
+/* Ice Page */
+#icecards{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: linear-gradient(to top, #021f34, #032F4E, #45696b, #032F4E, #021f34);
+    border: 5px solid #0f0f0f;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px 1px #0f0f0f;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+    padding: 10px 20px 15px 20px;
+    
+}
+#icecards a{
+    text-decoration: none;
+    color: #0f0f0f;
+}
+section.card:hover{
+    transform: scale(1.1);
+}
+section.card{
+    padding: 10px 5px 0 5px;
+    background-color: #66999B;
+    text-align: center;
+    border: 2px solid #0f0f0f;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px 1px #0f0f0f;
+    transition: transform .5s;
+}
+.discription{
+    grid-column: 1/4;
+    padding: 10px 5px 0 5px;
+    background-color: #66999B;
+    text-align: center;
+    border: 2px solid #0f0f0f;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px 1px #0f0f0f;
+    transition: transform .5s;
+}
